@@ -82,12 +82,54 @@
 
 						<?php // get_sidebar(); ?>
 
+
 				</div>
 
 				
 
 			</div>
+		
 
+
+<div class="menu-wrapper">
+
+<?php
+$args = array(
+	'post_type' => 'post',
+	'order' => 'DESC'
+);
+
+
+	// Custom query.
+$query = new WP_Query( $args );
+ 
+// Check that we have query results.
+if ( $query->have_posts() ) {
+ 
+    // Start looping over the query results.
+    while ( $query->have_posts() ) {
+ 
+        $query->the_post();
+        echo '<div class="menu-container">';
+	 		echo '<div class="img-container">';
+	 		the_post_thumbnail();
+ 			echo '</div>';
+ 		echo '<div class="menu-name">'.get_the_title().'</div>';
+
+ 		echo '</div>';
+        // Contents of the queried post results go here.
+        
+ 
+    }
+ 
+}
+ 
+// Restore original post data.
+wp_reset_postdata();
+
+?>
+
+</div>
 
 
 <?php get_footer(); ?>

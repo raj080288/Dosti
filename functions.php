@@ -194,3 +194,10 @@ function BBG_WrapStuff( $post ) {
 
 
 }
+
+function view_all_menu( $atts, $content = null ) {
+
+	
+
+
+}
