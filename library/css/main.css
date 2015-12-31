@@ -2945,12 +2945,8 @@ body.white .cta {
 #container {
   margin-bottom: 0;
 }
-.page-id-8 .row:nth-of-type(1) .col-smart {
-  background: green;
-  margin-right: 2%;
-}
-.page-id-8 .row:nth-of-type(1) .col-smart:last-child {
-  margin-right: 0;
+.row > *[class^="col-"] h1 {
+  margin-top: 0;
 }
 body {
   font-family: 'Raleway', arial, sans-serif;
@@ -5610,38 +5606,73 @@ a[rel="category tag"]:hover {
 .entry-content > *:last-child {
   padding-bottom: 2em;
 }
-.menu-wrapper {
+.entry > * {
   width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
-.menu-container {
-  float: left;
-  width: calc(20%);
-  position: relative;
+.menu-wrapper:after {
+  display: block;
+  content: '';
+  clear: both;
 }
-.menu-container .menu-name {
-  color: red;
+.menu-wrapper h2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.menu-wrapper h2:before,
+.menu-wrapper h2:after {
+  background-color: #ddd;
+  content: '\a0';
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  position: relative;
+  top: 0.5em;
+}
+.menu-wrapper h2:before {
+  margin-right: 10px;
+}
+.menu-wrapper h2:after {
+  margin-left: 10px;
+}
+.menu-wrapper .menu-container {
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.menu-wrapper .menu-container .menu-name {
   position: absolute;
   left: 0;
-  top: 50%;
+  bottom: 30px;
   background: #000000;
   color: yellow;
   padding: 1em;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
-.menu-container .img-container {
-  background: green;
+.menu-wrapper .menu-container .img-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 75%;
   /* 16:9 ratio */
   height: 0;
   overflow: hidden;
 }
-.menu-container .img-container img {
+.menu-wrapper .menu-container .img-container img {
   position: absolute;
   top: 0;
   left: 0;

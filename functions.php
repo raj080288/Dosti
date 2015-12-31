@@ -195,9 +195,43 @@ function BBG_WrapStuff( $post ) {
 
 }
 
-function view_all_menu( $atts, $content = null ) {
+// add_action( 'init', 'create_posttype' );
+// function create_posttype() {
 
-	
+// $args = array(
+//       'labels' => array(
+//         'name' => __( 'Products' ),
+//         'singular_name' => __( 'Product' )
+//       ),
+//       'public' => true,
+//       'has_archive' => true,
+//       'rewrite' => array('slug' => 'products'),
+//       'supports' => array( 'thumbnail' )
+//     );
 
 
+//   register_post_type( 'products', $args);
+ 
+// }
+
+function codex_custom_init() {
+    $args = array(
+      'public' => true,
+      'label'  => 'Menu',
+      'supports' => array( 'thumbnail', 'editor', 'title' )
+    );
+    register_post_type( 'menu', $args );
 }
+add_action( 'init', 'codex_custom_init' );
+
+
+
+function get_events() {
+    $args = array(
+      'public' => true,
+      'label'  => 'Events',
+      'supports' => array( 'thumbnail', 'editor', 'title' )
+    );
+    register_post_type( 'event', $args );
+}
+add_action( 'init', 'get_events' );
