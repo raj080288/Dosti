@@ -100,7 +100,8 @@
 <?php
 $args = array(
 	'post_type' => 'menu',
-	'order' => 'DESC'
+	'order' => 'DESC',
+	'posts_per_page' => 4
 );
 
 
