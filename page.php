@@ -129,8 +129,6 @@ if ( $query->have_posts() ) {
     }
  
 }
-
-echo '<a href="#">View Full Menu</a>';
  
 	// Restore original post data.
 	wp_reset_postdata();
@@ -140,8 +138,12 @@ echo '<a href="#">View Full Menu</a>';
 	</div>
 </div>
 
+<div class="fullmenu-btn"><a href="#">View Full Menu</a></div>
+
+
 <div class="upcoming-events-wrapper">
 		<h2>Upcomign events</h2>
+<div class="event-wrapper">
 
 		<?php
 $args = array(
@@ -160,12 +162,16 @@ if ( $query->have_posts() ) {
     while ( $query->have_posts() ) {
  
         $query->the_post();
-        echo '<div class="menu-container">';
+        echo '<div class="wrap">';
+        echo '<div class="event-container">';
 	 		echo '<div class="img-container">';
 	 		the_post_thumbnail();
  			echo '</div>';
- 		echo '<div class="menu-name">'.get_the_title().'</div>';
+ 		echo '</div>';
 
+ 		echo '<div class="event-title-container">';
+ 			echo '<div class="menu-name">'.get_the_title().'</div>';
+ 		echo '</div>';
  		echo '</div>';
         // Contents of the queried post results go here.
         
@@ -179,6 +185,7 @@ wp_reset_postdata();
 
 ?>
 
+</div>
 </div>
 
 
