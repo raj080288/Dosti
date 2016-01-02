@@ -230,7 +230,7 @@ function get_events() {
     $args = array(
       'public' => true,
       'label'  => 'Events',
-      'supports' => array( 'thumbnail', 'editor', 'title' )
+      'supports' => array( 'thumbnail', 'editor', 'title', 'excerpt' )
     );
     register_post_type( 'event', $args );
 }

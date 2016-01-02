@@ -142,7 +142,7 @@ if ( $query->have_posts() ) {
 
 
 <div class="upcoming-events-wrapper">
-		<h2>Upcomign events</h2>
+		
 <div class="event-wrapper">
 
 		<?php
@@ -156,13 +156,17 @@ $args = array(
 $query = new WP_Query( $args );
  
 // Check that we have query results.
-if ( $query->have_posts() ) {
+if ( $query->have_posts() ) { ?>
+
+	<h2>Upcoming Events</h2>
+
+	<?php
  
     // Start looping over the query results.
     while ( $query->have_posts() ) {
  
         $query->the_post();
-        echo '<div class="wrap">';
+        echo '<div class="event-wrap">';
         echo '<div class="event-container">';
 	 		echo '<div class="img-container">';
 	 		the_post_thumbnail();
@@ -171,6 +175,7 @@ if ( $query->have_posts() ) {
 
  		echo '<div class="event-title-container">';
  			echo '<div class="menu-name">'.get_the_title().'</div>';
+ 			echo '<div class="event-description">'.the_excerpt().'</div>';
  		echo '</div>';
  		echo '</div>';
         // Contents of the queried post results go here.
@@ -178,6 +183,8 @@ if ( $query->have_posts() ) {
  
     }
  
+} else {
+	echo " ";
 }
  
 // Restore original post data.

@@ -78,16 +78,6 @@
 //     position: relative;
 // }
 
-    .menu-wrapper {
-
-    	&:after {
-    		display:block;
-    		content: '';
-    		clear:both;
-    	}
-
-
-
   h2 {
   display: flex;
   flex-direction: row;
@@ -111,6 +101,14 @@ h2:before {
 h2:after {
   margin-left:10px;
 }
+
+    .menu-wrapper {
+
+    	&:after {
+    		display:block;
+    		content: '';
+    		clear:both;
+    	}
 
 
     	 .menu-container {
@@ -162,7 +160,7 @@ h2:after {
 }
 
 .upcoming-events-wrapper > * {
-	margin: 0 auto;
+	margin: 2em auto 0;
 	position:relative;
 	width:100%;
 	max-width:1200px;
@@ -174,10 +172,19 @@ h2:after {
 	}
 }
 
-.wrap {
+
+
+.event-wrap {
 
 	overflow:auto;
 	margin-bottom: 30px;
+	margin-bottom:2em;
+	border-bottom:dashed 1px #000000;
+	padding-bottom:2em;
+
+	&:last-child {
+		border:0;
+	}
 
 
 	.event-container {
