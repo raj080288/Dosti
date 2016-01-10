@@ -13,8 +13,7 @@
 	position: relative;
 	opacity: 1;
 
-	height: 100vh;
-	min-height:100vh;
+	height: 700px;
 
 	margin-bottom: -40px; // combat the large margin on other pages.
 
@@ -25,6 +24,8 @@
 		top: 50%;
 		transform: translateY(-50%);
 		min-height: 100%;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; // IE8
+		opacity: .2;
 
 		@media screen and (max-width: 800px) {
 			width: auto;
@@ -124,7 +125,7 @@ h2:after {
 			font-size:1.2em;
 			background:#000000;
 			color:yellow;
-			padding:1em;
+			padding:1em 4em 1em 1em;
 		}
 
 		.img-container {
@@ -176,11 +177,15 @@ h2:after {
 
 .event-wrap {
 
-	overflow:auto;
-	margin-bottom: 30px;
-	margin-bottom:2em;
-	border-bottom:dashed 1px #000000;
-	padding-bottom:2em;
+	overflow: auto;
+    margin-bottom: 30px;
+    margin-bottom: 2em;
+    border-bottom: solid 2px #DCD3D3;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background: #f0f0f0;
+    padding-left: 1em;
+    padding-right: 1em;
 
 	&:last-child {
 		border:0;

@@ -2541,7 +2541,6 @@ hr {
 #container {
   position: relative;
   margin-bottom: 50px;
-  padding-top: 2.5em;
 }
 @media screen and (max-width: 900px) {
   #container {
@@ -2563,6 +2562,7 @@ hr {
 #carousel {
   position: relative;
   margin-bottom: 1em;
+  background: #DADA18;
 }
 #blog-sidebar {
   top: -60px;
@@ -2592,7 +2592,7 @@ hr {
   }
 }
 .admin-bar .header {
-  top: 32px !important;
+  top: 72px !important;
 }
 .page-template-template-home #content {
   margin-top: 50px;
@@ -3534,9 +3534,7 @@ dl {
   z-index: 1200;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
-  background: red;
   height: 50px;
   padding: 0;
   position: fixed;
@@ -3556,25 +3554,13 @@ dl {
   height: 100%;
 }
 .header #inner-header nav[role="navigation"] {
-  width: 90%;
+  width: 100%;
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
   z-index: 1;
-}
-.header #inner-header #logo {
-  left: 0;
-  display: block;
-  margin: 0;
-  padding: 0 0;
-  z-index: 5;
-}
-@media screen and (max-width: 900px) {
-  .header #inner-header #logo {
-    left: 2%;
-  }
 }
 nav[role="navigation"] .nav {
   display: -webkit-box;
@@ -3636,7 +3622,7 @@ nav[role="navigation"] .nav li {
   display: inline-block;
   position: relative;
   background: transparent;
-  color: #77285a;
+  color: #000000;
 }
 nav[role="navigation"] .nav li.current-menu-item a {
   color: #66739f;
@@ -3661,6 +3647,7 @@ nav[role="navigation"] .nav li:hover a {
 nav[role="navigation"] .nav li a {
   width: auto;
   color: inherit;
+  font-size: 1em;
 }
 nav[role="navigation"] .nav li:first-of-type {
   margin-left: 0;
@@ -3916,9 +3903,9 @@ nav[role="navigation"] .nav li .sub-menu:hover li a {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  color: #ffffff;
-  margin-top: -250px;
-  height: 250px;
+  color: #212121;
+  margin-top: -500px;
+  height: 500px;
 }
 @media screen and (max-width: 1200px) {
   #carousel + .custom-subheading {
@@ -3947,22 +3934,30 @@ nav[role="navigation"] .nav li .sub-menu:hover li a {
   clear: both;
 }
 #carousel + .custom-subheading > span {
-  font-size: 1.4em;
-  width: auto;
+  font-size: 8em;
+  font-style: italic;
+  width: 100%;
   float: left;
-  margin: 0 auto .2em 0;
+  margin: 0 auto .1em 0;
+  text-align: center;
   position: relative;
-  left: 20%;
   padding: 0.4em;
-  background: rgba(119, 40, 90, 0.7);
-  font-family: 'Baskerville Handcut W01';
+  font-family: 'Libre Baskerville', serif;
   clear: both;
   display: block;
 }
-#carousel + .custom-subheading > span:first-of-type {
-  left: 10%;
-  background: #77285a;
-  font-family: 'Raleway', arial, sans-serif;
+#carousel + .custom-subheading > span:first-child {
+  font-weight: bold;
+}
+#carousel + .custom-subheading > span:nth-child(2) {
+  font-size: 4em;
+}
+#carousel + .custom-subheading > span:last-child {
+  margin-top: .4.5em;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 2em;
 }
 @media screen and (max-width: 930px) {
   #carousel + .custom-subheading > span {
@@ -5488,8 +5483,7 @@ a[rel="category tag"]:hover {
   overflow: hidden;
   position: relative;
   opacity: 1;
-  height: 100vh;
-  min-height: 100vh;
+  height: 700px;
   margin-bottom: -40px;
 }
 .page-featured-image img {
@@ -5500,6 +5494,8 @@ a[rel="category tag"]:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   min-height: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: .2;
 }
 @media screen and (max-width: 800px) {
   .page-featured-image img {
@@ -5587,7 +5583,7 @@ h2:after {
   font-size: 1.2em;
   background: #000000;
   color: yellow;
-  padding: 1em;
+  padding: 1em 4em 1em 1em;
 }
 .menu-wrapper .menu-container .img-container {
   position: relative;
@@ -5629,8 +5625,12 @@ h2:after {
   overflow: auto;
   margin-bottom: 30px;
   margin-bottom: 2em;
-  border-bottom: dashed 1px #000000;
-  padding-bottom: 2em;
+  border-bottom: solid 2px #DCD3D3;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  background: #f0f0f0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .event-wrap:last-child {
   border: 0;
