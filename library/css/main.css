@@ -14,12 +14,13 @@
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -2530,6 +2531,14 @@ div.cf.newline:before {
   font-style: italic;
   content: "new line (this text will not appear in post)";
 }
+.mk-box-icon-2-title {
+  color: #77160d;
+  font-weight: bold;
+}
+.mk-box-icon-2-content {
+  color: #77160d;
+  text-align: left !important;
+}
 hr {
   border: none;
   border-top: 1px solid rgba(17, 86, 44, 0.5);
@@ -2562,7 +2571,7 @@ hr {
 #carousel {
   position: relative;
   margin-bottom: 1em;
-  background: #DADA18;
+  background: #E5D300;
 }
 #blog-sidebar {
   top: -60px;
@@ -2590,9 +2599,6 @@ hr {
   #blog-sidebar:before {
     display: none;
   }
-}
-.admin-bar .header {
-  top: 72px !important;
 }
 .page-template-template-home #content {
   margin-top: 50px;
@@ -2825,12 +2831,13 @@ p:empty + .gallery {
 .black li.basic.capacities:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   background-image: none;
   content: "\f111";
   text-align: center;
@@ -2864,10 +2871,11 @@ p:empty + .gallery {
   margin-top: 0;
 }
 .page-id-8 .row:nth-of-type(2) .col-smart {
-  background: #f0f0f0;
+  background: #E4DBB5;
   margin-right: 2%;
   width: calc(96%);
   padding-right: 4%;
+  margin-top: 1.4em;
 }
 .page-id-8 .row:nth-of-type(2) .col-smart:last-child {
   margin-right: 0;
@@ -2882,7 +2890,6 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Baskerville Handcut W01';
   font-weight: normal;
 }
 h5,
@@ -3486,6 +3493,9 @@ a + a.cta {
 dl {
   width: 100% !important;
 }
+body {
+  background-image: url(http://www.karachicuisine.com/wp-content/uploads/2015/03/pattern-menu-bg.jpg);
+}
 @media screen and (max-width: 900px) {
   .widget {
     width: 100%;
@@ -3535,7 +3545,7 @@ dl {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   width: 100%;
-  height: 50px;
+  height: 144px;
   padding: 0;
   position: fixed;
   top: 0;
@@ -3904,8 +3914,8 @@ nav[role="navigation"] .nav li .sub-menu:hover li a {
   margin-right: auto;
   position: relative;
   color: #212121;
-  margin-top: -500px;
-  height: 500px;
+  margin-top: -480px;
+  height: 480px;
 }
 @media screen and (max-width: 1200px) {
   #carousel + .custom-subheading {
@@ -4339,12 +4349,13 @@ a.cta-button {
   margin-right: 0.2em;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 #main .post a[href^="mailto:"]:before.pull-left {
   margin-right: .3em;
@@ -4366,12 +4377,13 @@ a.cta-button {
   margin-right: 0.2em;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 #main .post a[href^="http://twitter.com"]:before.pull-left {
   margin-right: .3em;
@@ -4393,12 +4405,13 @@ a.cta-button {
   margin-right: 0.2em;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 #main .post a[href*="linkedin.com"]:before.pull-left {
   margin-right: .3em;
@@ -4420,12 +4433,13 @@ a.cta-button {
   margin-right: 0.2em;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 #main .post a[href*="facebook.com"]:before.pull-left {
   margin-right: .3em;
@@ -4447,12 +4461,13 @@ a.cta-button {
   margin-right: 0.2em;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 #main .post a[href$=".pdf"]:before.pull-left {
   margin-right: .3em;
@@ -5550,7 +5565,7 @@ h2 {
 }
 h2:before,
 h2:after {
-  background-color: red;
+  background-color: #C5804D;
   content: '\a0';
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -5575,15 +5590,19 @@ h2:after {
   position: relative;
   width: calc(25%);
   float: left;
+  background: #000000;
 }
 .menu-wrapper .menu-container .menu-name {
   position: absolute;
   left: 0;
   bottom: 100px;
   font-size: 1.2em;
-  background: #000000;
-  color: yellow;
+  background: rgba(0, 0, 0, 0.77);
+  color: #D6D22B;
   padding: 1em 4em 1em 1em;
+  border-top: solid 1px #D6D22B;
+  border-bottom: solid 2px #D6D22B;
+  border-right: solid 1px #D6D22B;
 }
 .menu-wrapper .menu-container .img-container {
   position: relative;
@@ -5591,6 +5610,12 @@ h2:after {
   /* 16:9 ratio */
   height: 0;
   overflow: hidden;
+  opacity: .5;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+.menu-wrapper .menu-container .img-container:hover {
+  opacity: 1;
 }
 .menu-wrapper .menu-container .img-container img {
   position: absolute;
@@ -5605,10 +5630,17 @@ h2:after {
 .fullmenu-btn a {
   display: inline-block;
   border: solid 2px #F1C31D;
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
   padding: 1em;
   font-size: 1.3em;
   color: #000;
+}
+.upcoming-events-wrapper {
+  background: #cccccc;
+}
+.upcoming-events-wrapper h2 {
+  padding-top: 1.4em;
 }
 .upcoming-events-wrapper > * {
   margin: 2em auto 0;
@@ -6052,12 +6084,13 @@ a[rel="gallery[lightbox]"] img {
 a[rel="gallery[lightbox]"]::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   position: absolute;
   top: 10px;
   -webkit-transform: scale(1, 1);
@@ -6127,12 +6160,13 @@ a[rel="gallery[lightbox]"]:hover::after {
 a.popup-button:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   content: "\f08e";
   margin-right: 0.2em;
 }
@@ -6345,12 +6379,13 @@ button::-moz-focus-inner {
 .mfp-arrow:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
 }
 .mfp-arrow:before.pull-left {
   margin-right: .3em;
@@ -6943,12 +6978,13 @@ label input[type='checkbox'] + span:after,
 label input[type='checkbox'] + span:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   font-size: 1.4em;
   position: absolute;
   width: 2%;
@@ -7040,12 +7076,13 @@ label input[type='checkbox']:checked + span:hover {
 #popup-box-overlay button.close:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   font-size: 1.3em;
   content: "\f00d";
   position: relative;
@@ -7076,12 +7113,13 @@ label input[type='checkbox']:checked + span:hover {
 #popup-box-overlay button.close:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   font-size: 1.3em;
   content: "\f111";
   position: absolute;
@@ -7197,12 +7235,13 @@ div.wpcf7 form.wpcf7-form div label.complete:after {
   content: "\f00c";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   margin-left: 1em;
 }
 div.wpcf7 form.wpcf7-form div label.complete:after.pull-left {
@@ -7372,12 +7411,13 @@ div.wpcf7 form.wpcf7-form input[type='checkbox'] + span label:before,
 div.wpcf7 form.wpcf7-form input[type='radio'] + span label:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   font-size: 1.4em;
   position: absolute;
   width: 2%;
@@ -7437,12 +7477,13 @@ div.wpcf7 form.wpcf7-form textarea {
 div.wpcf7 form.wpcf7-form label:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   margin-right: 1em;
 }
 div.wpcf7 form.wpcf7-form label:before.pull-left {
@@ -7556,12 +7597,13 @@ div.wpcf7 form.wpcf7-form .wpcf7-mail-sent-ok {
 div.wpcf7 form.wpcf7-form .wpcf7-mail-sent-ok:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   content: "\f00d";
   position: absolute;
   bottom: 4%;
@@ -7933,12 +7975,13 @@ input[type='submit']:hover {
 .gfield_checkbox input[type='checkbox'] + label:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  color: #77160d;
   font-size: 1.4em;
   position: absolute;
   width: 2%;
@@ -8212,12 +8255,13 @@ html {
     content: "\f054";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
+    font-size: 3em;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    color: #77160d;
     position: absolute;
     right: 20px;
     -webkit-transition: -webkit-transform .4s ease;

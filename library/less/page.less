@@ -89,7 +89,7 @@
   margin:30px auto;
 }
 h2:before, h2:after {
-  background-color: red;
+  background-color: #C5804D;
   content: '\a0';
   flex-grow: 1;
   height: 3px;
@@ -116,6 +116,10 @@ h2:after {
 			position:relative;
 			width:calc(100% / 4);
   			float:left;
+  			background:#000000;
+  			
+
+
 		
 
 		.menu-name {
@@ -123,9 +127,12 @@ h2:after {
 			left:0;
 			bottom:100px;
 			font-size:1.2em;
-			background:#000000;
-			color:yellow;
+			background:rgba(0, 0, 0, 0.77);
+			color:#D6D22B;
 			padding:1em 4em 1em 1em;
+			border-top: solid 1px #D6D22B;
+    		border-bottom: solid 2px #D6D22B;
+    		border-right: solid 1px #D6D22B;
 		}
 
 		.img-container {
@@ -133,6 +140,13 @@ h2:after {
 		    padding-bottom: 75%; /* 16:9 ratio */
 		    height: 0;
 		    overflow: hidden;
+		    opacity:.5;
+		    transition:opacity 1s ease-out;
+
+		    &:hover {
+		    	opacity:1;
+		    }
+	
 
 
 		    img {
@@ -153,11 +167,20 @@ h2:after {
     a {
    		display: inline-block;
     	border: solid 2px #F1C31D;
-    	margin-top: 2em;
+    	margin-top: 3em;
+    	margin-bottom:1.5em;
     	padding: 1em;
     	font-size: 1.3em;
     	color: #000;
     }
+}
+
+.upcoming-events-wrapper {
+	background:#cccccc;
+
+	h2 {
+		padding-top:1.4em;
+	}
 }
 
 .upcoming-events-wrapper > * {
@@ -165,6 +188,8 @@ h2:after {
 	position:relative;
 	width:100%;
 	max-width:1200px;
+
+
 
 	&:after {
 		clear:both;
@@ -202,6 +227,7 @@ h2:after {
 		    padding-bottom: 56.25%; /* 16:9 ratio */
 		    height: 0;
 		    overflow: hidden;
+		 
 
 
 		    img {
