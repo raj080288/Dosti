@@ -20,7 +20,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-  color: #77160d;
+  color: #E3CB1A;
+  border: solid 1px #ffffff;
+  padding: 9%;
+  border-radius: 60px;
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -2760,7 +2763,10 @@ body#tinymce.wp-editor li.basic.capacities:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-  color: #77160d;
+  color: #E3CB1A;
+  border: solid 1px #ffffff;
+  padding: 9%;
+  border-radius: 60px;
   background-image: none;
   content: "\f111";
   text-align: center;

@@ -11,12 +11,12 @@
 }
 
 .mk-box-icon-2-title {
-    color:#77160d;
+    color:#E3CB1A;
     font-weight:bold;
 }
 
 .mk-box-icon-2-content  {
-  color:#77160d;
+  color:#DAD6D6;
   text-align:left !important;
 }
 
@@ -53,6 +53,16 @@ hr {
       padding-top: 40px;
     }
   }
+}
+
+
+.menu-wrapper {
+  padding-top:4em;
+  background:#181713;
+}
+
+.fullmenu-btn {
+  background:#181713;
 }
 
 #carousel {
@@ -344,24 +354,20 @@ p:empty + .gallery {
 
 
 .page-id-8 {
-  .row {
-    &:nth-of-type(2) {
-      .col-smart {
-        background:#E4DBB5;
-        margin-right:2%;
-        width:calc(100% - 4%);
-        padding-right:4%;
-        margin-top:1.4em;
+ 
+ .section {   
+      .row {
+        &:nth-of-type(1) {
+            .col-smart {
+              border-right:dashed 1px yellow;
+              padding-right:4%;
 
-
-        &:last-child {
-          margin-right:0;
-        }
-
-        &:first-child {
-          padding-left:4%;
-        }
+              &:first-child {
+                border-left:dashed 1px yellow;
+                padding:0 4%;
+              }
+            }
       }
     }
-  }
+}
 }
