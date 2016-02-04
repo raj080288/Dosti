@@ -2572,8 +2572,14 @@ hr {
   }
 }
 .menu-wrapper {
-  padding-top: 4em;
+  padding-top: 1em;
   background: #181713;
+}
+.menu-wrapper h2 {
+  padding-bottom: 0.3em;
+}
+.menu-wrapper h2 span {
+  color: #C59D5F;
 }
 .fullmenu-btn {
   background: #181713;
