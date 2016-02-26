@@ -21,7 +21,7 @@
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -2573,16 +2573,13 @@ hr {
 }
 .menu-wrapper {
   padding-top: 1em;
-  background: #181713;
 }
 .menu-wrapper h2 {
   padding-bottom: 0.3em;
 }
 .menu-wrapper h2 span {
-  color: #C59D5F;
-}
-.fullmenu-btn {
-  background: #181713;
+  color: #CC994B;
+  text-transform: uppercase;
 }
 #carousel {
   position: relative;
@@ -2855,7 +2852,7 @@ p:empty + .gallery {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   background-image: none;
@@ -3000,7 +2997,7 @@ a:visited {
 a:hover,
 a:visited:hover,
 a:visited:focus {
-  color: #e0b1cf;
+  color: #000000;
 }
 a:link,
 a:visited:link {
@@ -3647,7 +3644,7 @@ nav[role="navigation"] .nav li {
   color: #000000;
 }
 nav[role="navigation"] .nav li.current-menu-item a {
-  color: #66739f;
+  color: #000000;
   background: transparent;
 }
 nav[role="navigation"] .nav li.font-awesome {
@@ -3661,10 +3658,10 @@ nav[role="navigation"] .nav li.font-awesome a {
   font-size: 0.8em;
 }
 nav[role="navigation"] .nav li:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #000000;
 }
 nav[role="navigation"] .nav li:hover a {
-  color: #212121;
+  color: #DCC712;
 }
 nav[role="navigation"] .nav li a {
   width: auto;
@@ -4368,7 +4365,7 @@ a.cta-button {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -4399,7 +4396,7 @@ a.cta-button {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -4430,7 +4427,7 @@ a.cta-button {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -4461,7 +4458,7 @@ a.cta-button {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -4492,7 +4489,7 @@ a.cta-button {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -5592,7 +5589,7 @@ h2 {
 }
 h2:before,
 h2:after {
-  background-color: #C5804D;
+  background-color: #CC994B;
   content: '\a0';
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -5600,7 +5597,7 @@ h2:after {
           flex-grow: 1;
   height: 3px;
   position: relative;
-  top: 0.5em;
+  top: 0.7em;
 }
 h2:before {
   margin-right: 10px;
@@ -5618,8 +5615,8 @@ h2:after {
   width: calc(25%);
   float: left;
   background: #000000;
-  border-bottom: solid 5px #ffffff;
-  border-top: solid 5px #ffffff;
+  border-bottom: solid 6px #B7B4B4;
+  border-top: solid 6px #B7B4B4;
 }
 .menu-wrapper .menu-container .menu-name {
   position: absolute;
@@ -5627,11 +5624,9 @@ h2:after {
   bottom: 100px;
   font-size: 1.2em;
   background: rgba(0, 0, 0, 0.77);
-  color: #D6D22B;
+  color: #E0DBD4;
   padding: 1em 4em 1em 1em;
-  border-top: solid 1px #D6D22B;
-  border-bottom: solid 2px #D6D22B;
-  border-right: solid 1px #D6D22B;
+  border-right: solid 2px #E0DBD4;
 }
 .menu-wrapper .menu-container .img-container {
   position: relative;
@@ -5652,18 +5647,26 @@ h2:after {
 }
 .fullmenu-btn a {
   display: inline-block;
-  border: solid 2px #F1C31D;
-  margin-top: 3em;
-  margin-bottom: 1.5em;
-  padding: 1em;
+  margin-top: 3.5em;
+  margin-bottom: 2.5em;
+  padding: 1em 2em;
   font-size: 1.3em;
   color: #000;
+  background: #CC994B;
 }
-.upcoming-events-wrapper {
-  background: #cccccc;
+.fullmenu-btn a:hover {
+  background: #BD8734;
+  -webkit-transition: background 0.7s ease;
+  transition: background 0.7s ease;
 }
 .upcoming-events-wrapper h2 {
-  padding-top: 1.4em;
+  padding-top: 0.6em;
+  text-transform: uppercase;
+  color: #BD0D0D;
+}
+.upcoming-events-wrapper h2:before,
+.upcoming-events-wrapper h2:after {
+  background-color: #BD0D0D;
 }
 .upcoming-events-wrapper > * {
   margin: 2em auto 0;
@@ -5683,7 +5686,7 @@ h2:after {
   border-bottom: solid 2px #DCD3D3;
   padding-bottom: 1em;
   padding-top: 1em;
-  background: #f0f0f0;
+  background: #F1EFEF;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -5691,7 +5694,7 @@ h2:after {
   border: 0;
 }
 .event-wrap .event-container {
-  background: red;
+  background: #cccccc;
   width: 40%;
   float: left;
 }
@@ -6114,7 +6117,7 @@ a[rel="gallery[lightbox]"]::after {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   position: absolute;
@@ -6193,7 +6196,7 @@ a.popup-button:before {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   content: "\f08e";
@@ -6415,7 +6418,7 @@ button::-moz-focus-inner {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -7017,7 +7020,7 @@ label input[type='checkbox'] + span:before {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   font-size: 1.4em;
@@ -7118,7 +7121,7 @@ label input[type='checkbox']:checked + span:hover {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   font-size: 1.3em;
@@ -7158,7 +7161,7 @@ label input[type='checkbox']:checked + span:hover {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   font-size: 1.3em;
@@ -7283,7 +7286,7 @@ div.wpcf7 form.wpcf7-form div label.complete:after {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   margin-left: 1em;
@@ -7462,7 +7465,7 @@ div.wpcf7 form.wpcf7-form input[type='radio'] + span label:before {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   font-size: 1.4em;
@@ -7531,7 +7534,7 @@ div.wpcf7 form.wpcf7-form label:before {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   margin-right: 1em;
@@ -7654,7 +7657,7 @@ div.wpcf7 form.wpcf7-form .wpcf7-mail-sent-ok:before {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   content: "\f00d";
@@ -8035,7 +8038,7 @@ input[type='submit']:hover {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   font-size: 1.4em;
@@ -8318,7 +8321,7 @@ html {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     color: #E3CB1A;
-    border: solid 1px #ffffff;
+    border: solid 2px #ffffff;
     padding: 9%;
     border-radius: 60px;
     position: absolute;

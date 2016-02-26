@@ -21,7 +21,7 @@
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
 }
@@ -2764,7 +2764,7 @@ body#tinymce.wp-editor li.basic.capacities:before {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: #E3CB1A;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 9%;
   border-radius: 60px;
   background-image: none;

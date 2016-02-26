@@ -99,7 +99,8 @@
 
 <?php
 $args = array(
-	'post_type' => 'menu',
+	'post_type' => 'page',
+	'post_parent' => '145',
 	'order' => 'DESC',
 	'posts_per_page' => 4
 );
@@ -114,12 +115,15 @@ if ( $query->have_posts() ) {
     // Start looping over the query results.
     while ( $query->have_posts() ) {
  
-        $query->the_post();
-        echo '<div class="menu-container">';
+        $query->the_post(); 
+        ?>
+        <a href="<?php the_permalink(); ?>"><div class='menu-container'>
+        <?php
 	 		echo '<div class="img-container">';
 	 		the_post_thumbnail();
- 			echo '</div>';
- 		echo '<div class="menu-name">'.get_the_title().'</div>';
+	 		echo '<div class="menu-name">'.get_the_title().'</div>';
+ 			echo '</div></a>';
+ 		
 
  		echo '</div>';
 
@@ -175,7 +179,7 @@ if ( $query->have_posts() ) { ?>
 
  		echo '<div class="event-title-container">';
  			echo '<div class="menu-name">'.get_the_title().'</div>';
- 			echo '<div class="event-description">'.the_excerpt().'</div>';
+ 			echo '<div class="event-description"><div>'.the_excerpt().'</div></div>';
  		echo '</div>';
  		echo '</div>';
         // Contents of the queried post results go here.
